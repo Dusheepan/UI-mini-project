@@ -33,7 +33,7 @@ provide('triggerToast', triggerToast);
 
     <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-auto py-8 transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 dark:text-gray-400 text-sm">
-        &copy; {{ new Date().getFullYear() }} ModernStore. All rights reserved.
+        &copy; {{ new Date().getFullYear() }} Shopify. All rights reserved.
       </div>
     </footer>
 

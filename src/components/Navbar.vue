@@ -52,7 +52,7 @@ function onSearch() {
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center cursor-pointer" @click="router.push('/')">
           <Store class="h-8 w-8 text-indigo-600 dark:text-indigo-400 mr-2" />
-          <span class="font-bold text-xl tracking-tight text-gray-900 dark:text-white hidden sm:block">ModernStore</span>
+          <span class="font-bold text-xl tracking-tight text-gray-900 dark:text-white hidden sm:block">Shopify</span>
         </div>
 
         <!-- Search Bar -->
