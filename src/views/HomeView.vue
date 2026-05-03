@@ -3,6 +3,7 @@ import { ref, onMounted, inject } from 'vue';
 import { apiService, type Product } from '../services/api';
 import ProductCard from '../components/ProductCard.vue';
 import LoadingSkeleton from '../components/LoadingSkeleton.vue';
+import ProductMarquee from '../components/ProductMarquee.vue';
 
 const products = ref<Product[]>([]);
 const categories = ref<string[]>([]);
@@ -54,10 +55,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    
-    <!-- Hero Banner -->
-    <div class="bg-indigo-600 rounded-3xl overflow-hidden mb-10 shadow-lg relative">
+  <div>
+    <!-- Full-width product marquee right under navbar -->
+    <ProductMarquee />
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      
+      <!-- Hero Banner -->
+      <div class="bg-indigo-600 rounded-3xl overflow-hidden mb-10 shadow-lg relative">
       <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 mix-blend-multiply"></div>
       <div class="relative px-8 py-16 sm:px-16 sm:py-24 lg:py-32 flex flex-col items-start justify-center text-left">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
@@ -129,5 +134,6 @@ onMounted(() => {
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
