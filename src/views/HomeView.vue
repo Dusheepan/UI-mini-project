@@ -4,6 +4,7 @@ import { apiService, type Product } from '../services/api';
 import ProductCard from '../components/ProductCard.vue';
 import LoadingSkeleton from '../components/LoadingSkeleton.vue';
 import ProductMarquee from '../components/ProductMarquee.vue';
+import HeroSlider from '../components/HeroSlider.vue';
 
 const products = ref<Product[]>([]);
 const categories = ref<string[]>([]);
@@ -62,20 +63,7 @@ onMounted(() => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
       <!-- Hero Banner -->
-      <div class="bg-indigo-600 rounded-3xl overflow-hidden mb-10 shadow-lg relative">
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 mix-blend-multiply"></div>
-      <div class="relative px-8 py-16 sm:px-16 sm:py-24 lg:py-32 flex flex-col items-start justify-center text-left">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4">
-          Discover Our <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400">Latest Collection</span>
-        </h1>
-        <p class="text-indigo-100 max-w-2xl text-lg sm:text-xl mb-8">
-          Upgrade your lifestyle with premium products curated just for you. Free shipping on all orders over $50.
-        </p>
-        <button class="bg-white text-indigo-600 px-8 py-3 rounded-full font-bold shadow-md hover:bg-gray-50 hover:shadow-lg transition-all duration-300">
-          Shop Now
-        </button>
-      </div>
-    </div>
+      <HeroSlider :products="products" />
 
     <div class="flex flex-col lg:flex-row gap-8">
       
