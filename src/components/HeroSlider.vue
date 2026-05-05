@@ -11,7 +11,7 @@
       <p class="text-indigo-100 max-w-lg text-lg mb-8">
         Upgrade your lifestyle with premium products curated just for you. Free shipping on all orders over $50.
       </p>
-      <button class="bg-white text-indigo-600 px-8 py-3 rounded-full font-bold shadow-md hover:bg-gray-50 hover:shadow-lg transition-all duration-300">
+      <button class="bg-white/20 backdrop-blur-md text-white border border-white/40 px-8 py-3 rounded-full font-bold shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:bg-white/30 hover:shadow-[0_8px_30px_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
         Shop Now
       </button>
     </div>
@@ -26,7 +26,7 @@
 
       <div class="w-full max-w-sm relative" v-else>
         <!-- Slider Container -->
-        <div class="overflow-hidden rounded-2xl shadow-2xl bg-white dark:bg-gray-800 relative group">
+        <div class="overflow-hidden rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.2)] bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl border border-white/50 dark:border-gray-700/50 relative group transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
           
           <!-- Slides -->
           <div 
@@ -61,10 +61,10 @@
           </div>
           
           <!-- Navigation Arrows -->
-          <button @click.stop="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 dark:bg-gray-900/90 p-2 rounded-full text-gray-800 dark:text-white hover:bg-white dark:hover:bg-gray-900 shadow-lg transition-all opacity-0 -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 focus:opacity-100 z-20">
+          <button @click.stop="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/40 dark:bg-gray-900/40 backdrop-blur-md border border-white/30 p-2 rounded-full text-gray-800 dark:text-white hover:bg-white/60 dark:hover:bg-gray-900/60 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 -translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 focus:opacity-100 z-20 hover:scale-110 active:scale-95">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
           </button>
-          <button @click.stop="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 dark:bg-gray-900/90 p-2 rounded-full text-gray-800 dark:text-white hover:bg-white dark:hover:bg-gray-900 shadow-lg transition-all opacity-0 translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 focus:opacity-100 z-20">
+          <button @click.stop="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/40 dark:bg-gray-900/40 backdrop-blur-md border border-white/30 p-2 rounded-full text-gray-800 dark:text-white hover:bg-white/60 dark:hover:bg-gray-900/60 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 focus:opacity-100 z-20 hover:scale-110 active:scale-95">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </button>
         </div>

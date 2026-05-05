@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full overflow-hidden bg-black py-6 shadow-2xl border-b border-gray-800">
+  <div class="relative w-full overflow-hidden bg-black/80 backdrop-blur-sm py-6 shadow-2xl border-b border-gray-800/50">
     <!-- Gradient overlays for smooth fade effect -->
     <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
     <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
@@ -10,7 +10,7 @@
         <div 
           v-for="product in displayProducts" 
           :key="product.id + '-' + n" 
-          class="flex items-center space-x-4 bg-gray-900 rounded-2xl p-3 w-72 mx-3 flex-shrink-0 cursor-pointer group hover:bg-gray-800 transition-all duration-300 border border-gray-800 hover:border-gray-600 shadow-lg"
+          class="flex items-center space-x-4 bg-gray-900/40 backdrop-blur-md rounded-2xl p-3 w-72 mx-3 flex-shrink-0 cursor-pointer group hover:bg-gray-800/60 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] border border-gray-800/50 hover:border-gray-600/50 shadow-[0_4px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(255,255,255,0.05)]"
           @click="$router.push(`/product/${product.id}`)"
         >
           <div class="relative w-20 h-20 flex-shrink-0 overflow-hidden rounded-xl bg-gray-100">

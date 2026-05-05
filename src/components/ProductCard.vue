@@ -32,7 +32,7 @@ function addToCart(event: Event) {
 <template>
   <div 
     @click="goToDetails"
-    class="group bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-xl dark:hover:shadow-indigo-900/20 transition-all duration-300 cursor-pointer flex flex-col h-full transform hover:-translate-y-1"
+    class="group bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.05)] border border-white/50 dark:border-gray-700/50 overflow-hidden hover:shadow-[0_8px_30px_rgba(79,70,229,0.15)] dark:hover:shadow-[0_8px_30px_rgba(79,70,229,0.2)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] cursor-pointer flex flex-col h-full transform hover:-translate-y-2 hover:bg-white/90 dark:hover:bg-gray-800/90"
   >
     <!-- Image Container -->
     <div class="relative pt-[100%] bg-gray-50 dark:bg-gray-700/50 overflow-hidden">
@@ -79,7 +79,7 @@ function addToCart(event: Event) {
         
         <button 
           @click="addToCart"
-          class="p-2.5 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 dark:hover:bg-indigo-500 hover:text-white dark:hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+          class="p-2.5 rounded-full bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white backdrop-blur-md border border-indigo-500/20 hover:border-indigo-400 shadow-sm hover:shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500/50 dark:focus:ring-offset-gray-800"
           title="Add to cart"
         >
           <ShoppingCart class="w-5 h-5" />
